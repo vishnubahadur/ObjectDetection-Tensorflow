@@ -29,7 +29,8 @@ function imageDetector(img){
         for (obj of predictions){
           if(obj){
             let restext = document.createElement('p')
-              restext.innerHTML = obj.class;
+            restext.classList.add("result")
+              restext.innerHTML =  ` This is a picture of ${obj.class}`;
               res.appendChild(restext)
             }
         }

@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="image-container">
+      <div>
+        <label class="label" for="image">Upload Image</label>
+        <input
+          id="image"
+          name="image"
+          type="file"
+          placeholder="Enter the image URL"
+          hidden
+        />
+      </div>
+      <p><i>or</i></p>
+      <div>
+        <label class="label" id="startButton">Cick here to open camera
 
-        <div>
-            <label class="label" for="image">Upload Image</label>
-            <input id="image" name="image" type="file" placeholder="Enter the image URL" hidden>
-        </div>
-        <div class="image-preview">
-
-        </div>
-        <div id="result"></div>
+        </label>
+        
+      </div>
+      <div class="image-preview">
+        <!-- <video id="cameraFeed" autoplay playsinline ></video> -->
+      </div>
+      <div id="result"></div>
+      <div></div>
+      <video id="cameraFeed" autoplay playsinline ></video>
+      <button id="close" class="label">Close camera</button>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"> </script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"> </script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
 
-
-    
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@latest"> </script> -->
 
     <script src="script.js"></script>
-</body>
+    <script src="camera.js"></script>
+  </body>
 </html>
