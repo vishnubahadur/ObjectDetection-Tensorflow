@@ -1,14 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="image-container">
+    <header>
+      <div class="header-container">
+        <div class="header-right">
+          <img src="./assests/camera.avif" alt="" />
+          <div>
+            <h1 class="heading">Object Detection</h1>
+            <p class="sub">Powered by TensorFlow.js</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section1">
+        <div>
+          <h1>Real-Time Object Detection</h1>
+          <h4>
+            Detect objects in images or live camera feed using the powerful
+            COCO-SSD model. <br />Choose your preferred method below to get
+            started.
+          </h4>
+        </div>
+      </section>
+      <section class="section2">
+        <div class="image-upload card">
+          <img src="./assests/upload.png" alt="" />
+          <h1 class="heading">Upload Image</h1>
+          <p class="sub">
+            Select an image from your device to detect objects with bounding
+            boxes and confidence scores.
+          </p>
+          <a href="uploadImage.html" target="_blank" rel="noopener noreferrer">
+            <div class="label">
+              <label class="label" for="image">Upload Image</label>
+            </div>
+          </a>
+        </div>
+        <div class="image-upload card">
+          <img src="./assests/camera.png" alt="" />
+          <h1 class="heading">Live Camera</h1>
+          <p class="sub">
+            Use your device camera for real-time object detection with live
+            bounding boxes and labels.
+          </p>
+          <a href="liveCamera.html" target="_blank" rel="noopener noreferrer">
+          <div class="label">
+            <label class="label" for="image">Open Camera</label>
+          </div>
+          </a>
+        </div>
+      </section>
+    </main>
+    <section class="info"">
+      <div class="info-detail">
+      <h1 >What can be detected?</h1>
+      <p>The COCO-SSD model can detect 80 different object classes including:</p>
+      </div>
+    </section>
+    <footer>
+
+    </footer>
+
+    <!-- <div class="image-container">
       <div>
         <label class="label" for="image">Upload Image</label>
         <input
@@ -26,14 +87,14 @@
         </label>
         
       </div>
-      <div class="image-preview">
-        <!-- <video id="cameraFeed" autoplay playsinline ></video> -->
-      </div>
+      <div class="image-preview"> -->
+    <!-- <video id="cameraFeed" autoplay playsinline ></video> -->
+    <!-- </div>
       <div id="result"></div>
       <div></div>
-      <video id="cameraFeed" autoplay playsinline ></video>
-      <button id="close" class="label">Close camera</button>
-    </div>
+      <video id="cameraFeed" autoplay playsinline ></video> -->
+    <!-- <button id="close" class="label">Close camera</button> -->
+    <!-- </div> -->
 
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
@@ -41,7 +102,7 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@latest"> </script> -->
 
-    <script src="script.js"></script>
-    <script src="camera.js"></script>
+    <!-- <script src="script.js"></script>
+    <script src="camera.js"></script> -->
   </body>
 </html>

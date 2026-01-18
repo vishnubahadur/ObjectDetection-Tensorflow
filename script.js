@@ -23,6 +23,7 @@ function imageDetector(img){
   cocoSsd.load().then((model) => {
     // detect objects in the image.
     model.detect(img).then((predictions) => {
+      console.log(predictions)
      
       if(predictions.length!=0){
         
@@ -38,8 +39,6 @@ function imageDetector(img){
       else{
         res.innerHTML = "Unable to Detect object"
       }
-     
-      
     });
   });
 }

@@ -8,7 +8,7 @@ async function startCamera() {
   
     try {
         // Request access to the video input
-        const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false , facingMode:"user"});
+        const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false , capture:"environment"});
         // Set the stream as the source of the video element
         video.srcObject = stream;
         // Start playing the video  
