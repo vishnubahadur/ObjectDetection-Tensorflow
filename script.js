@@ -1,19 +1,21 @@
 const image = document.getElementById("image");
-const imagePreview = document.querySelector(".image-preview");
-const res = document.getElementById("result")
+const res = document.querySelector(".result")
+const showResult = document.querySelector(".showResult");
+const afterResult = document.querySelector(".after-result")
 
 let img = document.createElement("img");
 
-console.log(image)
+
 function handleImageUpload() {
   image.addEventListener("change", (e) => {
     // console.log(e.target.files[0]);
     let file = e.target.files[0];
-    res.innerHTML = ""
-    img.classList.add("image-preview-img");
     img.src = URL.createObjectURL(file);
-    imagePreview.appendChild(img);
+    res.appendChild(img);
+    res.style.display = "block"
+    afterResult.style.display="block"
     imageDetector(img)
+    showResult.innerHTML=""
   });
 }
 handleImageUpload();
@@ -25,14 +27,14 @@ function imageDetector(img){
     model.detect(img).then((predictions) => {
       console.log(predictions)
      
+      let restext = document.createElement('p')
       if(predictions.length!=0){
         
         for (obj of predictions){
           if(obj){
-            let restext = document.createElement('p')
-            restext.classList.add("result")
-              restext.innerHTML =  ` This is a picture of ${obj.class}`;
-              res.appendChild(restext)
+              restext.innerHTML =  `${obj.class} - ${Math.floor(obj.score*100)}%`
+              showResult.appendChild(restext)
+              showResult.style.display = "block"
             }
         }
       }

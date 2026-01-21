@@ -29,7 +29,7 @@
       </div>
       <div class="file-upload">
         <div class="upload">
-          <img src="./assests/upload.png" alt="">
+          <img src="./assests/upload.png" alt="" />
           <h4>Upload an image</h4>
 
           <p>Select a JPEG, PNG, or WebP image to analyze</p>
@@ -41,11 +41,29 @@
             placeholder="Enter the image URL"
             hidden
           />
-          <div class="preview-image">
-
+          <div class="result">
           </div>
         </div>
       </div>
+       <div class="showResult">
+      
     </div>
+
+    <div class="after-result">
+        <label for="image">upload another image</label>
+          <input
+            id="image"
+            name="image"
+            type="file"
+            placeholder="Enter the image URL"
+            hidden
+          />
+    </div>
+    </div>
+   
+    <footer>© Made with ❤️ By Vishnu Bahadur</footer>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    <script src="script.js"></script>
   </body>
 </html>
