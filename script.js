@@ -4,7 +4,7 @@ const res = document.getElementById("result")
 
 let img = document.createElement("img");
 
-
+console.log(image)
 function handleImageUpload() {
   image.addEventListener("change", (e) => {
     // console.log(e.target.files[0]);

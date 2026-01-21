@@ -1,12 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="uploadImage.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
       <div class="header-container">
         <div class="header-right">
@@ -18,5 +19,33 @@
         </div>
       </div>
     </header>
-</body>
+    <div id="detectImage">
+      <div class="back-option">
+        <a href="index.html"><button class="btn">Go Back</button></a>
+        <span>
+          <h2>Live Camera Detection</h2>
+          <p>Real-time object detection
+
+</p>
+        </span>
+      </div>
+      <div class="file-upload">
+        <div class="upload">
+          <img src="./assests/camera.png" alt="">
+          <h4>Start Camera Detection</h4>
+
+          <p>Allow camera access to begin real-time object detection</p>
+          <label for="image">Start Camera</label>
+          <input
+            id="image"
+            name="image"
+            type="file"
+            placeholder="Enter the image URL"
+            hidden
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>

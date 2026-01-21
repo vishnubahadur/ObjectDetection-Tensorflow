@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -24,11 +24,10 @@ header {
   justify-content: center;
   align-items: center;
   margin: 3rem;
- 
 }
-.header-right>img{
-    height: 40px;
-    border-radius: 10px;
+.header-right > img {
+  height: 40px;
+  border-radius: 10px;
 }
 .heading {
   color: aliceblue;
@@ -54,13 +53,13 @@ header {
     font-weight: 300;
   }
 }
-.section2{
+.section2 {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  .card{
+  .card {
     height: 40vh;
     width: 30vw;
     background-color: #3535368e;
@@ -68,58 +67,60 @@ header {
     transition: all 0.2s ease-in;
   }
 }
-.card:hover{
+.card:hover {
   cursor: pointer;
-  border: 1px solid #477AEE;
+  border: 1px solid #477aee;
 }
-.image-upload{
+.image-upload {
   padding: 20px;
 }
-.image-upload>img{
+.image-upload > img {
   height: 60px;
 }
-.image-upload>h1{
-  margin-top:10px;
+.image-upload > h1 {
+  margin-top: 10px;
   font-weight: 400;
 }
-.label{
+.label {
   margin-top: 30px;
   padding: 12px;
   text-align: center;
   color: aliceblue;
   font-weight: 600;
-  background-color: #477AEE;
-  width:25vw;
+  background-color: #477aee;
+  width: 25vw;
   border-radius: 20px;
 }
-a{
+a {
   text-decoration: none;
 }
-.info{
-  margin-top:40px;
+.info {
+  margin-top: 40px;
   margin-bottom: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.info-detail{
+.info-detail {
   border-radius: 10px;
-  padding: 20px 25px;
+  padding: 10px 20px;
   width: 80vw;
-  height: 20vh;
   background-color: #3535368e;
   margin-bottom: 20px;
-  h1{
+  h1 {
     color: aliceblue;
   }
-  p{
-     color:#838588;
+  p {
+    color: #838588;
   }
 }
-footer{
+footer {
   width: 100%;
   height: 10vh;
-   border-top: 2px solid #55575a67; 
+  border-top: 2px solid #55575a67;
+  color: #FFF;
+  text-align: center;
+  padding-top: 20px;
 }
 
 /* .image-container{
@@ -191,63 +192,78 @@ footer{
     }
   } */
 
-@media only screen and (max-width:600px){
-  header{
+@media only screen and (max-width: 600px) {
+  header {
     height: 10vh;
   }
-  .header-right{
+  .header-right {
     gap: 1rem;
     margin-left: 1rem;
-    h1{
+    h1 {
       font-size: 20px;
     }
-    p{
+    p {
       font-size: 12px;
     }
-    img{
-        height: 40px;
+    img {
+      height: 40px;
     }
   }
   .section1 {
-     padding: 1rem;
-  h1 {
-    font-size: 2rem;
-    font-weight: 500;
-    color: aliceblue;
+    padding: 1rem;
+    h1 {
+      font-size: 2rem;
+      font-weight: 500;
+      color: aliceblue;
+    }
+    h4 {
+      font-size: 1rem;
+      color: #838588;
+      font-weight: 300;
+    }
   }
-  h4 {
-    font-size: 1rem;
-    color: #838588;
-    font-weight: 300;
-  }
-}
-  .section2{
+  .section2 {
     flex-direction: column;
-    .card{
+    .card {
       width: 80vw;
       overflow: hidden;
     }
   }
-  .label{
-  margin-top: 30px;
-  padding: 12px;
-  text-align: center;
-  color: aliceblue;
-  font-weight: 600;
-  background-color: #477AEE;
-  width:100%;
-  border-radius: 20px;
-}
-.info-detail{
-  width: 90%;
-  height: 20vh;
-  h1{
-    font-size: 20px;
+  .label {
+    margin-top: 30px;
+    padding: 12px;
+    text-align: center;
     color: aliceblue;
+    font-weight: 600;
+    background-color: #477aee;
+    width: 100%;
+    border-radius: 20px;
   }
-  p{
-     color:#838588;
-     font-size: 12px;
+  .info-detail {
+    width: 90%;
+    h1 {
+      font-size: 20px;
+      color: aliceblue;
+    }
+    p {
+      color: #838588;
+      font-size: 12px;
+    }
   }
-}
+  .back-option{
+    width: 90vw;
+    .btn{
+      padding: 6px;
+    }
+    h2{
+      font-size: 18px;
+    }
+    p{
+      font-size: 12px;
+    }
+  }
+  .upload {
+    width: 90vw;
+    text-align: center;
+  }
 }

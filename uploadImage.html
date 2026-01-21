@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="uploadImage.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -19,15 +20,31 @@
       </div>
     </header>
     <div id="detectImage">
-      <div>
-        <label class="label" for="image">Choose Image</label>
-        <input
-          id="image"
-          name="image"
-          type="file"
-          placeholder="Enter the image URL"
-          hidden
-        />
+      <div class="back-option">
+        <a href="index.html"><button class="btn">Go Back</button></a>
+        <span>
+          <h2>Image Detection</h2>
+          <p>Upload an image to detect objects</p>
+        </span>
+      </div>
+      <div class="file-upload">
+        <div class="upload">
+          <img src="./assests/upload.png" alt="">
+          <h4>Upload an image</h4>
+
+          <p>Select a JPEG, PNG, or WebP image to analyze</p>
+          <label for="image">Choose a File</label>
+          <input
+            id="image"
+            name="image"
+            type="file"
+            placeholder="Enter the image URL"
+            hidden
+          />
+          <div class="preview-image">
+
+          </div>
+        </div>
       </div>
     </div>
   </body>
